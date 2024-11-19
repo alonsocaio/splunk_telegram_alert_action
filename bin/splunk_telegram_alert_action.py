@@ -10,7 +10,7 @@ def send_telegram_message(payload):
 	summary = config.get('summary')
 	message = config.get('message')
 
-	telegram_message = '<b>%s<b>\n%s' % (summary, message)
+	telegram_message = '<b>%s</b>\n\n%s' %(summary, message)
 
 	url = 'https://api.telegram.org/bot%s/sendMessage' % bot_id
 
